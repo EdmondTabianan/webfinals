@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="stylesheet/admision.css">
+    <link rel="stylesheet" href="stylesheet/navbar.css">
+    <link rel="stylesheet" href="stylesheet/footer.css">
+    <link rel="icon" href="images/Package/LUGO.png">
+</head>
+<header>
+    <img src="images/Package/LUGO.png" alt="logo" class="imga">
+    <nav>
+        <ul id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About DCSA</a></li>
+            <li><a href="program.html">Programs</a></li>
+            <li class="dropdown">
+                <a href="#">Admission</a>
+                <ul class="dropdown-menu">
+                    <li><a href="admision.html">College</a></li>
+                    <li><a href="sr.html">Sr High School</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>    
+</header>
+<body>
+    <div class="container">
+        <section class="reg_1">
+            <form id="registrationForm">
+                <span class="he">Registration</span>
+                <br><br>
+                <p>Branch:</p>
+                <select id="branch" name="branch" required>
+                    <option value="">Select Branch</option>
+                    <option value="Fairview">Fairview</option>
+                    <option value="Valenzuela">Valenzuela</option>
+                    <option value="Caloocan">Caloocan</option>
+                    <option value="Meycauayan">Meycauayan</option>
+                </select>
+
+
+                <p>Program:</p>
+                <select id="program" name="program" required>
+                    <option value="">Select Program</option>
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSHM">BSHM</option>
+                    <option value="BSOA">BSOA</option>
+                    <option value="BSTM">BSTM</option>
+                </select>
+
+                <span class="button">
+                    <input type="button" value="Next" onclick="showReg2()">
+                </span>
+            </form>
+        </section>
+
+        <section class="reg_2" style="display: none;">
+            <form id="personalInfoForm">
+                <span class="he">Personal Information</span>
+
+                <p>Name:</p>
+                <input type="text" placeholder="Full Name" required>
+
+                <p>Address:</p>
+                <input type="text" placeholder="Address" required>
+
+                <p>Contact No:</p>
+                <input type="number" placeholder="Contact Number" required>
+
+                <p>Email Address:</p>
+                <input type="email" placeholder="Email Address" required>
+
+                <p>Birthdate:</p>
+                <input type="date" placeholder="Birthdate" required>
+
+                <p>Gender:</p>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+
+                <span class="button">
+                    <input type="button" value="Previous" onclick="showReg1()">
+                    <input type="submit" value="Submit">
+                </span>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        function showReg2() {
+            let branch = document.getElementById('branch').value;
+            let program = document.getElementById('program').value;
+
+            if (branch === "" || program === "") {
+                alert("Please select both Branch and Program.");
+            } else {
+                document.querySelector('.reg_1').style.display = 'none';
+                document.querySelector('.reg_2').style.display = 'block';
+            }
+        }
+
+        function showReg1() {
+            document.querySelector('.reg_2').style.display = 'none';
+            document.querySelector('.reg_1').style.display = 'block';
+        }
+
+        function validateReg1() {
+            let branch = document.getElementById('branch').value;
+            let program = document.getElementById('program').value;
+
+            if (branch === "" || program === "") {
+                alert("Please select both Branch and Program.");
+                return false;
+            }
+            return true;
+        }
+
+        function validatePersonalInfo() {
+            let gender = document.getElementById('gender').value;
+
+            if (gender === "") {
+                alert("Please select your Gender.");
+                return false;
+            }
+
+            return true;
+        }
+
+
+    </script>
+</body>
+<footer>
+    <div class="contentss">
+        <div class="sub">
+            <div class="section">
+                <h1>Program</h1>
+                <a href="admision.html"><p>College</p></a>
+                <a href="sr.html"><p>Senior High School</p></a>
+            </div>
+            <div class="section">
+                <h1>Admission</h1>
+                <p>Procedure and Requirements</p>
+                <p>Applicant Reservation</p>
+            </div>
+            <div class="section">
+                <h1>Other Links</h1>
+                <p>Microsoft Certification</p>
+            </div>
+            <div class="section">
+                
+            <h1>Contact:</h1>
+            <p>
+                <b>Fairview Branch </b>
+                Address: 85 Winston Street, Commonwealth Avenue, Barangay Fairview, Quezon City <br>
+                Contact: 8921-8350
+            </p>
+            <p>
+                <b>Valenzuela Branch</b>
+                Address: 32 Gotaco Bldg. II, McArthur Highway, Marulas, Valenzuela City
+                <br>
+                Contact: 829-27536
+            </p>
+            <p>
+                <b>Caloocan Branch</b>
+                Address: #357 J. Teodoro Street Corner 10th Avenue, Barangay 62, Caloocan City
+                <br>
+                Contact: 83661970 / 83673208
+            </p>
+            <p>
+                <b>Meycauayan Branch</b>
+                Address: Datamex Building, Brgy. Saluysoy, Ngusong Buwaya Street, Meycauayan, Bulacan <br>
+                Contact: 0951-2965086
+            </p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Datamex College of Saint Adeline - All Rights Reserved</p>
+            <p>Developed by BSIT-2A</p>
+        </div>
+    </div>
+    
+</footer>
+</html>

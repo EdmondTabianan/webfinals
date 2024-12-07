@@ -1,0 +1,307 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgba(136, 0, 0, 0.888);
+}
+
+header .imga {
+    height: 80px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    color: #000;
+    height: 90px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a {
+    color: rgb(85, 72, 72);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul.show {
+    display: block;
+}
+
+nav a:hover {
+    color: #000000;
+    text-shadow: 0 0 5px #000000,
+    0 0 10px #000000, 
+    0 0 15px #000000;
+}
+
+nav .active:active {
+    background-color: #800;
+    color: #f8f8f8;
+    padding: 50px 10px;
+    border: 20px solid #800;
+}
+
+#navLinks {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#navLinks li {
+    position: relative;
+    margin: 0 10px;
+}
+
+#navLinks li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #fff;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(136, 0, 0, 0.589);
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    color: #000;
+    background-color: transparent;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    color: #000000;
+    text-shadow: 0 0 5px #000000,
+    0 0 10px #000000, 
+    0 0 15px #000000;
+}
+
+.dropdown > a:hover {
+    color: #000000;
+    text-shadow: 0 0 5px #000000,
+    0 0 10px #000000, 
+    0 0 15px #000000;
+}
+
+.typing-container {
+    position: relative;
+    font-size: 1rem;
+    display: inline-block;
+    white-space: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.typing-container::before {
+    content: "";
+    display: inline-block;
+    animation: typing 6s steps(5) 1s infinite forwards; /* Infinite typing animation */
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+    1.6% {
+        content: "D|";
+    }
+    3.2% {
+        content: "D";
+    }
+    4.8% {
+        content: "DA|";
+    }
+    6.4% {
+        content: "DA";
+    }
+    8% {
+        content: "DAT|";
+    }
+    9.6% {
+        content: "DAT";
+    }
+    11.2% {
+        content: "DAT|";
+    }
+    12.8% {
+        content: "DAT";
+    }
+    14.4% {
+        content: "DATAM|";
+    }
+    16% {
+        content: "DATAM";
+    }
+    17.6% {
+        content: "DATAME|";
+    }
+    19.2% {
+        content: "DATAME";
+    }
+    20.8% {
+        content: "DATAMEX|";
+    }
+    22.4% {
+        content: "DATAMEX";
+    }
+    24% {
+        content: "DATAMEX C|";
+    }
+    25.6% {
+        content: "DATAMEX CO|";
+    }
+    27.2% {
+        content: "DATAMEX COL|";
+    }
+    28.8% {
+        content: "DATAMEX COLL|";
+    }
+    30.4% {
+        content: "DATAMEX COLLE|";
+    }
+    32% {
+        content: "DATAMEX COLLEG|";
+    }
+    33.6% {
+        content: "DATAMEX COLLEGE|";
+    }
+    35.2% {
+        content: "DATAMEX COLLEGE O|";
+    }
+    36.8% {
+        content: "DATAMEX COLLEGE OF|";
+    }
+    38.4% {
+        content: "DATAMEX COLLEGE OF S|";
+    }
+    40% {
+        content: "DATAMEX COLLEGE OF SA|";
+    }
+    41.6% {
+        content: "DATAMEX COLLEGE OF SAINT|";
+    }
+    43.2% {
+        content: "DATAMEX COLLEGE OF SAINT A|";
+    }
+    44.8% {
+        content: "DATAMEX COLLEGE OF SAINT AD|";
+    }
+    46.4% {
+        content: "DATAMEX COLLEGE OF SAINT ADE|";
+    }
+    48% {
+        content: "DATAMEX COLLEGE OF SAINT ADEL|";
+    }
+    49.6% {
+        content: "DATAMEX COLLEGE OF SAINT ADELI|";
+    }
+    51.2% {
+        content: "DATAMEX COLLEGE OF SAINT ADELIN|";
+    }
+    52.8% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE|";
+    }
+    54.4% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE D|";
+    }
+    56% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DA|";
+    }
+    57.6% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DAT|";
+    }
+    59.2% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATA|";
+    }
+    60.8% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAM|";
+    }
+    62.4% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAME|";
+    }
+    64% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX|";
+    }
+    65.6% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX C|";
+    }
+    67.2% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX CO|";
+    }
+    68.8% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COL|";
+    }
+    70.4% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLL|";
+    }
+    72% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLE|";
+    }
+    73.6% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEG|";
+    }
+    75.2% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE|";
+    }
+    76.8% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE O|";
+    }
+    78.4% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF|";
+    }
+    80% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF S|";
+    }
+    81.6% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF SA|";
+    }
+    83.2% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF SAINT|";
+    }
+    84.8% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF SAINT A|";
+    }
+    86.4% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF SAINT AD|";
+    }
+    88% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF SAINT ADE|";
+    }
+    89.6% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF SAINT ADEL|";
+    }
+    91.2% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF SAINT ADELI|";
+    }
+    92.8% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF SAINT ADELIN|";
+    }
+    94.4% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF SAINT ADELINE|";
+    }
+    100% {
+        content: "DATAMEX COLLEGE OF SAINT ADELINE DATAMEX COLLEGE OF SAINT ADELINE";
+    }
+}

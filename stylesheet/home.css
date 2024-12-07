@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+
+section {
+    min-height: 100vh;
+    background-color: navy;
+}
+
+.C {
+    text-align: right;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    margin: 10px 0 10px 130px;
+    right: 0;
+    bottom: 0;
+    min-width: 50%; 
+    min-height: 500%;
+    border: 5px solid navy;
+    border-radius: 40px;
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.history, .pilo {
+    height: 500px;
+    border: 3px solid rgba(0, 30, 199, 0.5);
+    padding: 10px;
+    margin: 20px 0 ;
+    width: 40%;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.452);
+    overflow: scroll;
+    scrollbar-width:none;
+}
+
+.history h1 {
+    text-align: center;
+}
+
+.history p{
+    font-size: 18px;
+    margin: 10px;
+    justify-content: center;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.pilo h1 {
+    text-align: center;
+}
+
+.pilo p{
+    font-size: 18px;
+    margin: 10px;
+    justify-content: center;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.container {
+    display: flex;
+    margin: 0;
+    justify-content: space-evenly;
+    color: #fff;
+    height: 90vh;
+}
+
+.school {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    background: #acacac;
+}
+
+.school h1 {
+    text-align: center;
+}
+
+.mission, .vision, .hym {
+    border: 3px solid rgb(0, 30, 199);
+    backdrop-filter: blur(50px);
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.452);
+    margin: 20px 0 20px 0;
+}
+
+.mission p{
+    margin: 10px;
+    justify-content: center;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.vision p{
+    margin: 10px;
+    justify-content: center;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.hym p{
+    margin: 10px;
+    justify-content: center;
+}
