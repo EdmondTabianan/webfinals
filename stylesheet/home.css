@@ -19,7 +19,7 @@ body {
 }
 
 #myVideo {
-    margin: 10px 0 10px 130px;
+    justify-content: center;
     right: 0;
     bottom: 0;
     min-width: 50%; 
