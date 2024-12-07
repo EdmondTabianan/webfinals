@@ -42,7 +42,7 @@ section p {
             flex: 1; /* Ensures equal width */
             max-width: 600px;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: rgb(179, 1, 1);
             border: 1px solid #ccc;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
