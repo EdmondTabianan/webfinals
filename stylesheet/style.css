@@ -17,15 +17,16 @@
     text-align: center;
 }
 
-.containerss{
+.containerss {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
     border: 1px solid #000000;
     background: linear-gradient(180deg, #ffffff, #f7f7f7, #d4d4d4, #a0a0a0);
     text-align: center;
+    max-width: 500px;
 }
