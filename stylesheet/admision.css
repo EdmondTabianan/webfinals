@@ -6,7 +6,8 @@
 }
 
 .reg_1, .reg_2 {
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
@@ -28,7 +29,8 @@ form p {
 }
 
 input[type="text"], input[type="email"], input[type="number"], select, input[type="date"] {
-    width: 100%;
+    width: 90%;
+    max-width: 400px;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;

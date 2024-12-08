@@ -1,57 +1,31 @@
-body {
-    margin: 0;
+.sigi .containersss {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensures the full height of the viewport is used */
-    background-color: #f9f9f9; /* Optional background color */
-}
-
-section {
+    flex-direction: column;
     text-align: left; /* Aligns text within the section */
-    max-width: 600px; /* Optional: limits the section's width */
     padding: 20px; /* Adds padding around the content */
-    background-color: #ffffff; /* Optional background color for the section */
-    border: 1px solid #ccc; /* Optional border for visibility */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    border-radius: 8px; /* Optional rounded corners */
+    background-color: #ffffff; 
+    gap: 20px;
 }
 
-section p {
-    margin: 10px 0; /* Adds spacing between paragraphs */
-    text-align: left; /* Aligns text properly within paragraphs */
-    width: auto; /* Removes the fixed width constraint */
+.containerss p:nth-child(2) {
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 40px;
 }
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column; /* Arrange sections vertically */
-            gap: 20px; /* Space between sections */
-            min-height: 100vh;
-            background-color: #f9f9f9;
-        }
-        .section-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px; /* Space between college and SHS */
-            width: 80%; /* Adjust as needed for your design */
-        }
-        .section {
-            flex: 1; /* Ensures equal width */
-            max-width: 600px;
-            padding: 20px;
-            background-color: rgb(179, 1, 1);
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            text-align: left;
-        }
-        .section h2 {
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        .section p {
-            margin: 10px 0;
-        }
+.containersss h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.containerss{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 50%;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    background: linear-gradient(180deg, #ffffff, #f7f7f7, #d4d4d4, #a0a0a0);
+    text-align: center;
+}

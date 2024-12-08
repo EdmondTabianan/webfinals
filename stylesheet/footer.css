@@ -1,76 +1,104 @@
-footer {
-    background-color: rgba(136, 0, 0, 0.926);
-    padding: 0;
+@media (max-width: 2040px) {
+    *{
+        border-style: dotted;
+    }
+    footer {
+        background-color: rgba(136, 0, 0, 0.926);
+        padding: 30px 0; /* Add padding for more breathing room */
+    }
+    
+    footer p,
+    footer h1,
+    footer a {
+        color: #f1f1f1; /* Lighter color for better contrast */
+        text-decoration: none;
+        line-height: 1.6; /* Improve line height for better readability */
+    }
+    
+    footer a:hover {
+        color: #ffffff95;
+        text-decoration: underline; /* Add underline on hover for links */
+    }
+    
+    .contentss p:hover {
+        color: #ffffff95;
+    }
+    
+    .containers {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center; /* Center content */
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .containers h1 {
+        color: #fff;
+    }
+    
+    .containers p {
+        font-size: 1rem;
+        color: #fff;
+        line-height: 1.6; /* Add line-height for better readability */
+        margin-bottom: 15px;
+    }
+    
+    .contentss {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .sub {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .section {
+        text-align: center;
+        margin: 20px;
+        width: 280px;
+    }
+    
+    .section h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #fff;
+        font-weight: bold; /* Make section headings stand out more */
+    }
+    
+    .section p {
+        font-size: 14px;
+        margin: 10px 0;
+        color: #fff;
+        line-height: 1.5; /* Improved line height for paragraphs */
+    }
+    
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 30px;
+        color: #fff;
+    }
+    
+    .copyright p {
+        margin: 5px 0;
+        color: #fff;
+        font-size: 14px; /* Slightly larger font size for copyright text */
+    }
 }
 
-footer p,
-footer h1,
-footer a {
-    color: #1b1b1b;
-    text-decoration: none;
-}
+/* Mobile responsiveness for better legibility */
+@media (max-width: 600px) {
+    .containers p {
+        width: 90%; /* Adjust width for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for better legibility */
+    }
 
-.contentss p:hover{
-    color: #ffffff95;
+    .section {
+        width: 100%; /* Make sections take up full width on small screens */
+    }
 }
-
-.containers {
-    display: flex;
-}
-
-.containers h1 {
-    font-size: 2rem;
-    padding: 10px;
-    color: #fff;
-}
-
-.containers p {
-    font-size: 1rem;
-    width: 400px;
-    margin: 50px 20px 20px 0;
-    color: #fff;
-}
-
-.contentss {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    background-color: #800;
-}
-
-.sub {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.section {
-    text-align: center;
-    margin: 0 10px;
-    width: 300px;
-}
-
-.section h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.section p {
-    font-size: 14px;
-    margin: 10px 0;
-    color: #fff;
-}
-
-.copyright {
-    text-align: center;
-    font-size: 12px;
-    margin-top: 20px;
-}
-
-.copyright p {
-    margin: 5px 0;
-    color: #fff;
-}
-

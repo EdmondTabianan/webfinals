@@ -1,9 +1,12 @@
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;  /* Default row layout */
     padding: 0 20px;
     background-color: rgba(136, 0, 0, 0.888);
+    gap: 20px;
 }
 
 header .imga {
@@ -13,15 +16,24 @@ header .imga {
     margin-top: 5px;
 }
 
+/* General Nav Styles */
 nav {
     display: flex;
     align-items: center;
     color: #000;
-    height: 90px;
+    flex-direction: row;  /* Default row layout */
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
 }
 
 nav ul li {
     list-style: none;
+    text-align: center;
 }
 
 nav a {
@@ -38,8 +50,8 @@ nav ul.show {
 nav a:hover {
     color: #000000;
     text-shadow: 0 0 5px #000000,
-    0 0 10px #000000, 
-    0 0 15px #000000;
+                 0 0 10px #000000, 
+                 0 0 15px #000000;
 }
 
 nav .active:active {
@@ -94,15 +106,15 @@ nav .active:active {
 .dropdown-menu li a:hover {
     color: #000000;
     text-shadow: 0 0 5px #000000,
-    0 0 10px #000000, 
-    0 0 15px #000000;
+                 0 0 10px #000000, 
+                 0 0 15px #000000;
 }
 
 .dropdown > a:hover {
     color: #000000;
     text-shadow: 0 0 5px #000000,
-    0 0 10px #000000, 
-    0 0 15px #000000;
+                 0 0 10px #000000, 
+                 0 0 15px #000000;
 }
 
 .typing-container {
@@ -119,6 +131,40 @@ nav .active:active {
     display: inline-block;
     animation: typing 6s steps(5) 1s infinite forwards; /* Infinite typing animation */
 }
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center;    /* Center the items horizontally */
+        gap: 10px;              /* Reduce the gap between items */
+    }
+
+    ul {
+        flex-direction: column; /* Stack list items vertically in small screens */
+        width: 100%;             /* Full-width for each item in a column layout */
+        justify-content: center; /* Center the items */
+    }
+
+    #navLinks {
+        flex-direction: column; /* Make links stack vertically */
+    }
+
+    #navLinks li {
+        margin: 5px 0; /* Space out the list items */
+    }
+
+    .dropdown-menu {
+        min-width: 100%; /* Ensure the dropdown menu spans the full width */
+    }
+
+    .dropdown {
+        width: 100%; /* Make the dropdown links take full width */
+    }
+}
+
+
+
 
 @keyframes typing {
     0% {
