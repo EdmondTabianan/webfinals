@@ -1,7 +1,4 @@
 @media (max-width: 2040px) {
-    *{
-        border-style: dotted;
-    }
     footer {
         background-color: rgba(136, 0, 0, 0.926);
         padding: 30px 0; /* Add padding for more breathing room */
